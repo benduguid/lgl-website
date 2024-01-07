@@ -93,7 +93,7 @@ export default {
       };
       // send a POST request to the specified URL with the JSON data
       axios
-        .post("https://lgl.caydey.com/api/setFeatured", json)
+        .post("/api/setFeatured", json)
         .then(() => {
           alert("schedules");
         })

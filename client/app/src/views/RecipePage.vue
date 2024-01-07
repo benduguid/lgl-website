@@ -130,7 +130,7 @@ export default {
     this.loading = true;
     axios
       .get(
-        "https://lgl.caydey.com/api/getRecipe?id=" +
+        "/api/getRecipe?id=" +
           this.$route.params.recipe_id
       )
       .then((response) => {

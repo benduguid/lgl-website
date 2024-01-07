@@ -7,7 +7,7 @@ export default {
   props: ["recipe"],
   data() {
     return {
-      imageLocation: `https://lgl.caydey.com/recipeImages/${this.recipe}.jpg`,
+      imageLocation: `/recipeImages/${this.recipe}.jpg`,
     };
   },
 };

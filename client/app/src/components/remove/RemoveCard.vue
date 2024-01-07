@@ -25,7 +25,7 @@ export default {
   methods: {
     removeRecipe(recipe_id) {
       // Make a POST request to removeRecipe API with recipe ID
-      axios.post("https://lgl.caydey.com/api/removeRecipe", { id: recipe_id }).then((response) => {
+      axios.post("/api/removeRecipe", { id: recipe_id }).then((response) => {
         console.log("Recipe successfully removed!");
       }).catch((error) => {
         console.log("Recipe failed to remove!");

@@ -17,7 +17,7 @@ export const useRecipestore = defineStore({
   actions: {
     async updateAllRecipes() {
       try {
-        const res = await axios.get("https://lgl.caydey.com/api/allRecipes");
+        const res = await axios.get("/api/allRecipes");
         this.items = res.data.data;
       } catch (ex) {
         console.log(ex);
@@ -31,7 +31,7 @@ export const useRecipestore = defineStore({
 
       try {
         var res = await axios.post(
-          "https://lgl.caydey.com/api/findRecipe",
+          "/api/findRecipe",
           json
         );
         this.recommendedRecipes = res.data.data.recipes;

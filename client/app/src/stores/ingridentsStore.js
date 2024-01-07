@@ -35,7 +35,7 @@ export const useIngridentsStore = defineStore({
     async updateAllIngredients() {
       try {
         const res = await axios.get(
-          "https://lgl.caydey.com/api/allIngredients"
+          "/api/allIngredients"
         );
         this.items = res.data.data;
       } catch (ex) {

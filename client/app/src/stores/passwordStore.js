@@ -26,7 +26,7 @@ export const usePasswordStore = defineStore({
 
       try {
         const res = await axios.post(
-          "https://lgl.caydey.com/api/checkAdminPassword",
+          "/api/checkAdminPassword",
           { password: this.password }
         );
         if (res.data.success) {
